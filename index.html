@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Junior Sarr — Software Developer &amp; Cybersecurity Specialist</title>
+<meta name="description" content="Portfolio of Junior Sarr — software development and cybersecurity projects.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="#top" class="logo">JS<span class="logo-slash">://</span></a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#work">Work</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="wrap hero-grid">
+      <div class="hero-text">
+        <p class="eyebrow">Portfolio</p>
+        <h1>Junior Sarr</h1>
+        <p class="hero-role">Software Developer &amp; Cybersecurity Specialist</p>
+        <p class="hero-bio">
+          Junior graduated First-Class from Lancaster University with a Master's in Cybersecurity and
+          a Bachelor's in Computer Science. He builds practical, secure systems — spanning applied
+          cryptography, security tooling, and full working applications — with a particular strength
+          in Python and in cybersecurity management and principles.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#work">View projects</a>
+          <a class="btn btn-ghost" href="resume.pdf" target="_blank" rel="noopener noreferrer">Download résumé</a>
+        </div>
+      </div>
+
+      <div class="cert-card" aria-label="Summary credential">
+        <div class="cert-card-head">
+          <span class="cert-tag">X.509</span>
+          <span class="cert-tag cert-tag-muted">v3</span>
+        </div>
+        <dl class="cert-fields">
+          <div class="cert-field">
+            <dt>Subject</dt>
+            <dd>CN = Junior Sarr</dd>
+          </div>
+          <div class="cert-field">
+            <dt>Organization</dt>
+            <dd>O = Software Development, O = Cybersecurity</dd>
+          </div>
+          <div class="cert-field">
+            <dt>Issued by</dt>
+            <dd>Lancaster University — M.Sc. Cybersecurity, B.Sc. Computer Science (First-Class)</dd>
+          </div>
+          <div class="cert-field">
+            <dt>Key usage</dt>
+            <dd>Python · Secure Systems Design · Applied Cryptography</dd>
+          </div>
+          <div class="cert-field">
+            <dt>Status</dt>
+            <dd><span class="status-dot" aria-hidden="true"></span>Valid — open to opportunities</dd>
+          </div>
+        </dl>
+        <div class="cert-card-foot">
+          <span class="fingerprint-label">Fingerprint</span>
+          <span class="fingerprint" id="fingerprint">4A:1F:9E:6C:22:B0:D8:71:3F:AA</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section class="work" id="work">
+    <div class="wrap">
+      <p class="eyebrow">Selected work</p>
+      <h2 class="section-title">Projects</h2>
+      <p class="section-lead">Three systems spanning secure tooling and full application development.</p>
+
+      <div class="project-grid">
+
+        <article class="project-card">
+          <div class="project-top">
+            <span class="tag tag-dev">Software Development</span>
+          </div>
+          <h3>Automated Drug Interaction Checker</h3>
+          <p>A system that evaluates the severity of drug interaction conflicts, using a constraint
+             solver to reason about combinations rather than a fixed lookup table.</p>
+          <ul class="stack">
+            <li>Python</li><li>Z3 Solver</li><li>Flet</li><li>Figma</li>
+          </ul>
+          <a class="project-link" href="https://github.com/Jimalda/Third_Year_Project" target="_blank" rel="noopener noreferrer">
+            View on GitHub <span aria-hidden="true">→</span>
+          </a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <span class="tag tag-sec">Cybersecurity</span>
+          </div>
+          <h3>Simple-to-Use Certificate Authority</h3>
+          <p>A working Certificate Authority that generates and manages X.509 certificates, built
+             with attention to cryptographic best practice and secure key handling.</p>
+          <ul class="stack">
+            <li>Python</li><li>cryptography</li><li>X.509</li><li>Flet</li>
+          </ul>
+          <a class="project-link" href="https://github.com/Jimalda/Simple_to_use_CA" target="_blank" rel="noopener noreferrer">
+            View on GitHub <span aria-hidden="true">→</span>
+          </a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <span class="tag tag-sec">Cybersecurity</span>
+          </div>
+          <h3>Phishing Simulator</h3>
+          <p>A simulator that helps people recognize and avoid phishing attempts, built as a
+             practical training aid for identifying common social-engineering threats.</p>
+          <ul class="stack">
+            <li>Python</li><li>Flet</li>
+          </ul>
+          <a class="project-link" href="https://github.com/Jimalda/Phishing_Simulator" target="_blank" rel="noopener noreferrer">
+            View on GitHub <span aria-hidden="true">→</span>
+          </a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills" id="skills">
+    <div class="wrap">
+      <p class="eyebrow">Capabilities</p>
+      <h2 class="section-title">Skills</h2>
+      <p class="section-lead">Languages, tools, and standards from academic work, industry experience, and personal projects.</p>
+
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3 class="skill-group-title tag-dev-text">Software Development</h3>
+          <ul class="skill-list">
+            <li>Python, Java, C, JavaScript, HTML</li>
+            <li>MySQL &amp; SQLite</li>
+            <li>Git, GitHub &amp; GitLab</li>
+            <li>Test automation (Squish, image recognition)</li>
+            <li>GitHub Copilot, Gemini, OpenAI tooling</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3 class="skill-group-title tag-sec-text">Cybersecurity</h3>
+          <ul class="skill-list">
+            <li>X.509 / PKI &amp; applied cryptography</li>
+            <li>Kali Linux &amp; penetration testing fundamentals</li>
+            <li>GDPR &amp; NIS2 compliance standards</li>
+            <li>Cloud computing (Microsoft Azure)</li>
+            <li>Linux &amp; Windows administration, networking</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="skills-extra">
+        <div class="skill-group">
+          <h3 class="skill-group-title">Languages</h3>
+          <ul class="skill-list skill-list-inline">
+            <li>French — native</li>
+            <li>English — proficient</li>
+            <li>German — intermediate</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3 class="skill-group-title">Certifications</h3>
+          <ul class="skill-list skill-list-inline">
+            <li>Microsoft Certified: Azure Fundamentals — April 2026</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="experience" id="experience">
+    <div class="wrap">
+      <p class="eyebrow">Background</p>
+      <h2 class="section-title">Experience</h2>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-when">Oct 2024 – Apr 2025</div>
+          <div class="timeline-body">
+            <h3>Teaching Assistant — Lancaster University Leipzig</h3>
+            <p>Laboratory demonstrator for Human-Computer Interaction, Computer Networks, and
+               Secure Cyber Systems modules, helping students work through HCI principles,
+               cybersecurity concepts, and the IMUNES network simulation tool.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-when">Feb 2023 – Mar 2024</div>
+          <div class="timeline-body">
+            <h3>Test Automation Engineer — Ipoque GmbH</h3>
+            <p>Built automated Python tests for software quality assurance using image recognition
+               and the Squish framework, wrote functions to parse and retrieve data from JSON files,
+               and refactored existing code for better organization.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="wrap contact-inner">
+      <div>
+        <p class="eyebrow">Get in touch</p>
+        <h2 class="section-title">Contact</h2>
+        <p class="section-lead">Reach out directly, or take a look at the full résumé.</p>
+      </div>
+      <ul class="contact-list">
+        <li>
+          <span class="contact-label">Email</span>
+          <a class="contact-value" href="mailto:Jr.b.sarr@gmail.com">Jr.b.sarr@gmail.com</a>
+        </li>
+        <li>
+          <span class="contact-label">GitHub</span>
+          <a class="contact-value" href="https://github.com/Jimalda" target="_blank" rel="noopener noreferrer">github.com/Jimalda</a>
+        </li>
+        <li>
+          <span class="contact-label">LinkedIn</span>
+          <a class="contact-value" href="https://www.linkedin.com/in/junior-sarr-a638ab239/" target="_blank" rel="noopener noreferrer">linkedin.com/in/junior-sarr</a>
+        </li>
+        <li>
+          <span class="contact-label">Résumé</span>
+          <a class="contact-value" href="resume.pdf" target="_blank" rel="noopener noreferrer">Download PDF</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <span>© <span id="year"></span> Junior Sarr</span>
+    <span class="footer-note">Built for GitHub Pages</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
