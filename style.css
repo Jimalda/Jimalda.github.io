@@ -276,9 +276,42 @@ a {
 }
 
 .work, .skills, .contact { padding: 88px 0; }
+.about { padding: 88px 0; border-top: 1px solid var(--line); background: var(--surface); }
 .work { border-top: 1px solid var(--line); }
 .skills { border-top: 1px solid var(--line); background: var(--surface); }
 .contact { border-top: 1px solid var(--line); }
+
+/* ============================================
+   About
+   ============================================ */
+.about-grid {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 56px;
+  align-items: start;
+}
+
+.about-photo img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid var(--line);
+  display: block;
+}
+
+.about-text p {
+  color: var(--muted);
+  font-size: 15.5px;
+  max-width: 620px;
+  margin: 0 0 16px;
+}
+
+.about-hobbies {
+  font-family: var(--font-mono);
+  font-size: 13.5px !important;
+  color: var(--ink) !important;
+}
 
 /* ============================================
    Project grid
@@ -351,15 +384,32 @@ a {
   border-radius: 3px;
 }
 
+.project-links {
+  border-top: 1px solid var(--line);
+  padding-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .project-link {
   font-size: 14px;
   font-weight: 500;
   color: var(--ink);
-  border-top: 1px solid var(--line);
-  padding-top: 16px;
   transition: gap 0.15s ease, opacity 0.15s ease;
 }
 .project-link:hover { opacity: 0.65; }
+
+.project-card > .project-link {
+  border-top: 1px solid var(--line);
+  padding-top: 16px;
+}
+
+.project-link-secondary {
+  color: var(--muted);
+  font-weight: 400;
+  font-size: 13.5px;
+}
 
 /* ============================================
    Skills
@@ -524,6 +574,8 @@ a.contact-value:hover { color: var(--dev); }
    ============================================ */
 @media (max-width: 860px) {
   .hero-grid { grid-template-columns: 1fr; gap: 40px; }
+  .about-grid { grid-template-columns: 1fr; gap: 28px; }
+  .about-photo img { max-width: 260px; }
   .project-grid { grid-template-columns: 1fr; }
   .skills-grid { grid-template-columns: 1fr; gap: 32px; }
   .skills-extra { grid-template-columns: 1fr; gap: 24px; }
